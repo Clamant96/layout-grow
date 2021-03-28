@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html, body {
+    height: 100%;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+    
+}
+
+:root {
+    --background-button: #00ab84;
+    --background-button-hover: #088568;
+    --background-produtos: #f7f7f7;
+    --background-navegacao: #ffffff;
+    --background-footer: #222222;
+    --background-footer-rodape: #191919;
+
+    --text-white: #ffffff;
+    --text-menu-hiver: #ffffffb8;
+    --text-descricao: #2a2a2a;
+    --text-descricao-p: #5a5a5a;
+    --text-produto-h3: #2a2a2a;
+    --text-navegacao-h2: #f7f5f2;
+    --text-navegacao-p: #eaeaea;
+    --text-menu-h2: #2a2a2a;
+    --text-menu-p: #5a5a5a;
+    --text-footer-h2: #f7f5f2;
+    --text-footer-p: #eaeaea;
+
+}
+
+/* BACKGROUND */
+#background {
+    position: fixed;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../img/hero01-free-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    z-index: -1;
+
+}
+
+/* CONTAINER */
+#container {
+    width: 100%;
+    height: auto;
+
+    z-index: 1;
+
+}
+
+/* HEADER */
+#container header {
+    padding: 2%;
+
+    width: 96%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#container header #logo {
+    width: 50%;
+    height: auto;
+
+    font-size: 35px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+
+    color: var(--text-white);
+
+}
+
+#container header #menu {
+    width: 50%;
+    height: auto;
+
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-white);
+
+}
+
+#container header #menu nav {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container header #menu nav ul {
+    display: flex;
+
+    list-style: none;
+
+}
+
+#container header #menu nav ul a {
+    padding: 5% 8%;
+
+    text-decoration: none;
+
+    color: var(--text-menu-hiver);
+
+}
+
+#container header #menu nav ul a .active {
+    color: var(--text-white);
+
+}
+
+#container header #menu nav ul a li {
+    transition: color, .5s;
+
+}
+
+#container header #menu nav ul a li:hover {
+    color: var(--text-white);
+
+}
+
+/*SECTION MENU*/
+#container #sectionMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 86vh;
+
+}
+
+#container #sectionMenu h2 {
+    font-size: 22px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    color: var(--text-white);
+
+}
+
+#container #sectionMenu h1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 70%;
+    height: auto;
+
+    font-size: 96px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    color: var(--text-white);
+
+    text-align: center;
+
+}
+
+#container #sectionMenu button {
+    padding: 1% 2%;
+
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+
+    color: var(--text-white);
+
+    background-color: var(--background-button);
+
+    border: none;
+    border-radius: 3px;
+
+    transition: background-color, .5s;
+
+}
+
+#container #sectionMenu button:hover {
+    background-color: var(--background-button-hover);
+
+}
+
+/* SECTION PRODUTOS */
+#container #sectionProdutos {
+    padding: 2.5%;
+    padding-top: 104px;
+   
+    width: 95%;
+    height: auto;
+
+    background-color: var(--background-produtos);
+
+}
+
+#container #sectionProdutos h2 {
+    font-size: 48px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    color: var(--text-descricao);
+
+}
+
+#container #sectionProdutos #descricao {
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#container #sectionProdutos #descricao p {
+    width: 50%;
+    height: auto;
+
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-descricao-p);
+
+    line-height: 1.9;
+
+}
+
+#container #sectionProdutos #descricao button {
+    padding: 1% 2%;
+
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+
+    color: var(--text-white);
+
+    background-color: var(--background-button);
+
+    border: none;
+    border-radius: 3px;
+
+    transition: background-color, .5s;
+
+}
+
+#container #sectionProdutos #descricao button:hover {
+    background-color: var(--background-button-hover);
+
+}
+
+/* SECTION PRODUTOS - ITENS */
+#container #sectionProdutos #produtos {
+    margin-top: 3.5em;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap
+
+}
+
+#container #sectionProdutos #produtos a {
+    text-decoration: none;
+
+    min-width: 24%;
+    max-width: 24%;
+    height: auto;
+
+    flex: 1;
+
+}
+
+#container #sectionProdutos #produtos a #img {
+    width: 100%;
+    height: auto;
+
+}
+
+#container #sectionProdutos #produtos a #img img {
+    width: 100%;
+    height: auto;
+
+}
+
+#container #sectionProdutos #produtos a h3 {
+    font-size: 16px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    color: var(--text-produto-h3);
+
+}
+
+#container #sectionProdutos #produtos a p {
+    font-size: 14.4px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+
+    color: var(--text-descricao-p);
+
+}
+
+/* SECTION NAVEGACAO */
+#container #sectionNavegacao {
+    padding: 2.5%;
+    padding-top: 104px;
+   
+    width: 95%;
+    height: auto;
+
+    background-image: url(../img/pic20-free-img.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-color: var(--background-navegacao);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#container #sectionNavegacao #menus {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* MENU AMAZONIA */
+#container #sectionNavegacao #menus #menuAmazonia {
+    padding: 3%;
+
+    width: 44%;
+    height: auto;
+
+    background-image: url(../img/floresta-amazonia-2019.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia h2 {
+    margin-top: 30%;
+
+    font-size: 32px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    color: var(--text-navegacao-h2);
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia p {
+    margin-top: 2%;
+    margin-bottom: 6%;
+
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-navegacao-p);
+
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia a {
+    text-decoration: none;
+
+    width: 20%;
+    height: auto;
+
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: color, .5s;
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia a:hover {
+    color: var(--background-button);
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia a p {
+    font-weight: 500;
+
+    transition: color, .5s;
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia a p:hover {
+    color: var(--background-button);
+
+}
+
+#container #sectionNavegacao #menus #menuAmazonia a svg {
+    width: 15px;
+    height: auto;
+
+}
+
+/* MENU CERRADO */
+#container #sectionNavegacao #menus #menuCerrado {
+    padding: 3%;
+
+    width: 44%;
+    height: auto;
+
+    background-image: url(../img/cerrado.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado h2 {
+    margin-top: 30%;
+
+    font-size: 32px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    color: var(--text-navegacao-h2);
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado p {
+    margin-top: 2%;
+    margin-bottom: 6%;
+
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-navegacao-p);
+
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado a {
+    text-decoration: none;
+
+    width: 20%;
+    height: auto;
+
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: color, .5s;
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado a:hover {
+    color: var(--background-button);
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado a p {
+    font-weight: 500;
+
+    transition: color, .5s;
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado a p:hover {
+    color: var(--background-button);
+
+}
+
+#container #sectionNavegacao #menus #menuCerrado a svg {
+    width: 15px;
+    height: auto;
+
+}
+
+#container #sectionNavegacao #cestasBasicas {
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+#container #sectionNavegacao #cestasBasicas h2 {
+    font-size: 48px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    color: var(--text-menu-h2);
+
+}
+
+#container #sectionNavegacao #cestasBasicas p {
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-menu-p);
+
+}
+
+#container #sectionNavegacao #cestasBasicas button {
+    padding: 1% 2%;
+
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+
+    color: var(--text-white);
+
+    background-color: var(--background-button);
+
+    border: none;
+    border-radius: 3px;
+
+    transition: background-color, .5s;
+
+}
+
+
+/* FOOTER */
+#container footer {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#container footer #contatos {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-footer);
+
+}
+
+/* LOGO */
+#container footer #contatos #logo {
+    width: 25%;
+    height: auto;
+
+}
+
+#container footer #contatos #logo #img {
+    padding: 25%;
+
+    width: 50%;
+    height: auto;
+
+}
+
+#container footer #contatos #logo #img img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* DADOS EMPRESA */
+#container footer #contatos #dadosEmpresa {
+    margin-left: 20%;
+    width: 75%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container footer #contatos #dadosEmpresa #item {
+    margin: 5%;
+
+    width: auto;
+    height: auto;
+
+}
+
+/* SOBRE */
+#container footer #contatos #dadosEmpresa #item #sobre {
+    width: 100%;
+    height: auto;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #sobre ul {
+    list-style: none;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #sobre ul li {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-footer-p);
+
+}
+
+#container footer #contatos #dadosEmpresa #item #sobre ul li strong {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-footer-h2);
+
+}
+
+/* CONTRIBUICAO */
+#container footer #contatos #dadosEmpresa #item #contribuicao {
+    width: 100%;
+    height: auto;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contribuicao ul {
+    list-style: none;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contribuicao ul li {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-footer-p);
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contribuicao ul li strong {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-footer-h2);
+
+}
+
+/* CONTATOS */
+#container footer #contatos #dadosEmpresa #item #contato {
+    width: 70%;
+    height: auto;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contato ul {
+    list-style: none;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contato ul li {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-footer-p);
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contato ul li strong {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+
+    color: var(--text-footer-h2);
+
+}
+
+#container footer #contatos #dadosEmpresa #item #contato ul li svg {
+    margin: 2%;
+
+    width: 7%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* FOOTER - RODAPE */
+#container footer #rodape {
+    padding: 1%;
+
+    width: 98%;
+    height: auto;
+
+    background-color: var(--background-footer-rodape);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container footer #rodape p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+
+    color: var(--text-footer-p);
+
+}
+
+#container footer #rodape p strong {
+    font-weight: 500;
+
+}
